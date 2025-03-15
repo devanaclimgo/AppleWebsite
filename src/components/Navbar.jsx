@@ -1,4 +1,4 @@
-import { appleImg } from '../utils'
+import { appleImg, bagImg, searchImg } from '../utils'
 import React from 'react'
 
 const Navbar = () => {
@@ -13,6 +13,11 @@ const Navbar = () => {
               {nav}
             </div>
           ))}
+        </div>
+
+        <div>
+          <img src={searchImg} alt='search' width={18} height={18} />
+          <img src={bagImg} alt='bag' width={18} height={18} />
         </div>
       </nav>
     </header>
