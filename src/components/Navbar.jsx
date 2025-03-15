@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <img src={appleImg} />
+        <img src={appleImg} alt='Apple' width={14} height={18} />
       </nav>
     </header>
   )
