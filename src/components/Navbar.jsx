@@ -1,5 +1,5 @@
-import { appleImg, bagImg, searchImg } from '../utils'
 import React from 'react'
+import { appleImg, bagImg, searchImg } from '../utils'
 
 const Navbar = () => {
   return (
