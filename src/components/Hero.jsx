@@ -2,7 +2,9 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className='w-full nav-height bg-black relative'>
+
+    </section>
   )
 }
 
