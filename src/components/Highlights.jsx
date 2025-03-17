@@ -6,6 +6,7 @@ import React from 'react'
 const Highlights = () => {
   useGSAP(() => {
     gsap.to('#title', { opacity: 1, y: 0 })
+    gsap.to('.link', { opacity: 1, y: 0 })
   }, [])
 
   return (
