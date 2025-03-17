@@ -1,6 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { watchImg } from '../utils'
+import { rightImg, watchImg } from '../utils'
 import React from 'react'
 
 const Highlights = () => {
@@ -19,6 +19,10 @@ const Highlights = () => {
             <p className='link'>
               Watch the film
               <img src={watchImg} alt='watch' className='ml-2' />
+            </p>
+            <p className='link'>
+              Watch the event
+              <img src={rightImg} alt='right' className='ml-2' />
             </p>
           </div>
         </div>
