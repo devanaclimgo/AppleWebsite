@@ -25,6 +25,7 @@ const VideoCarousel = () => {
     gsap.to('#slider', {
       transform: `translateX(${-100 * videoId})%}`,
       duration: 2,
+      ease: 'power2.inOut'
     })
 
     gsap.to('#video', {
@@ -93,7 +94,7 @@ const VideoCarousel = () => {
       }
 
       const animUpdate = () => {
-        anim.progress(videoRef.current[videoId] / hightlightsSlides[videoId].videoDuration)
+        anim.progress(videoRef.current[videoId].currentTime / hightlightsSlides[videoId].videoDuration)
       }
 
       if(isPlaying) {
@@ -137,6 +138,9 @@ const VideoCarousel = () => {
                   playsInline={true}
                   preload='auto'
                   muted
+                  className={`${
+                  list.id === 2 && 'translate-x-44'}pointer-events-none
+                  `}
                   ref={(el) => (videoRef.current[i] = el)}
                   onEnded={() => 
                     i !== 3 ? handleProcess('video-end', i) : handleProcess('video-last')
