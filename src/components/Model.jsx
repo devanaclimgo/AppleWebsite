@@ -44,6 +44,15 @@ const Model = () => {
               item={model}
               size={size}
             />
+            <ModelView
+              index={2}
+              groupRef={large}
+              gsapType='view2'
+              controlRef={cameraControlLarge}
+              setRotationState={setLargeRotation}
+              item={model}
+              size={size}
+            />
           </div>
         </div>
 
