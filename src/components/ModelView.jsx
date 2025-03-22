@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from '@react-three/drei'
+import { PerspectiveCamera, View } from '@react-three/drei'
 
 import Lights from './Lights'
 
