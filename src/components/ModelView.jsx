@@ -18,9 +18,11 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationSize, siz
 
       <Lights />
 
-      <Suspense fallback={<Html><div>Loading</div></Html>}>
-        <IPhone />
-      </Suspense>
+      <group ref={groupRef} name={`${index === 1} ? 'small' : 'large'`} position={[0, 0, 0]}>
+        <Suspense fallback={<Html><div>Loading</div></Html>}>
+          <IPhone />
+        </Suspense>
+      </group>
     </View>
   )
 }
