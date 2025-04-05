@@ -6,7 +6,12 @@ import App from './App.jsx'
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
-  dsn: "https://a4a04b0d188903ddcd272f0ec1ebd3ec@o4509092339843072.ingest.de.sentry.io/4509092342399056"
+  dsn: "https://a4a04b0d188903ddcd272f0ec1ebd3ec@o4509092339843072.ingest.de.sentry.io/4509092342399056",
+  integrations: [
+    Sentry.replayIntegration()
+  ],
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0 
 });
 
 createRoot(document.getElementById('root')).render(
