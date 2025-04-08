@@ -10,3 +10,4 @@ This project contains a visible copy of the iconic Apple Website, it uses animat
 - Three.js
 - ReactJS
 - Vite
+- Sentry.io
