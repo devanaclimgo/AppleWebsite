@@ -18,7 +18,7 @@ const Footer = () => {
             near you.
           </p>
           <p className='font-semibold text-gray text-xs'>
-            Or call 0008000-027-8471
+            Or call 000800-027-8471
           </p>
         </div>
 
@@ -27,14 +27,14 @@ const Footer = () => {
         <div className='flex md:flex-row flex-col md:items-center justify-between'>
           <p className='font-semibold text-gray text-xs'>Copyright @ 2025 Apple Inc. All rights reserved.</p>
           <div className='flex'>
-            {footerLinks.map((link, i) => {
+            {footerLinks.map((link, i) => (
               <p key={link} className='font-semibold text-gray text-xs'>
                 {link}{' '}
                 {i !== footerLinks.length - 1 && (
                   <span className='mx-2'> | </span>
                 )}
               </p>
-            })}
+            ))}
           </div>
         </div>
       </div>
