@@ -13,6 +13,10 @@ const Features = () => {
       { scale: 1, opacity: 1, ease: 'power1' },
       { scrub: 5.5 }
     )
+    animateWithGsap(
+      '.g_text',
+      { y: 0, opacity: 1, ease: 'power2.inOut', duration: 1 }
+    )
   }, [])
 
   return (
@@ -42,6 +46,18 @@ const Features = () => {
                 </div>
                 <div className='overflow-hidden flex-1 h-[50vh]'>
                   <img src={explore2Img} alt='titanium 2' className='feature-video g_grow' />
+                </div>
+              </div>
+
+              <div className='feature-text-container'>
+                <div className='flex-1 flex-center'>
+                  <p className='feature-text g_text'>
+                    iPhone 15 Pro is {' '}
+                    <span className='text-white'>
+                      the first iPhone to feature an aeroespace-grade titanium design
+                    </span>,
+                    using the same alloy that spacecrafts use for missions to Mars.
+                  </p>
                 </div>
               </div>
             </div>
