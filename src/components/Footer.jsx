@@ -8,11 +8,11 @@ const Footer = () => {
         <div>
           <p className='font-semibold text-gray text-xs'>
             More ways to shop: {' '}
-            <span className='underline text-blue'>
+            <span className='underline text-blue hover:text-white transition-all'>
               Find an Apple Store {' '}
             </span>
             or {' '}
-            <span className='underline text-blue'>
+            <span className='underline text-blue hover:text-white transition-all'>
               other retailer
             </span> {' '}
             near you.
@@ -28,7 +28,7 @@ const Footer = () => {
           <p className='font-semibold text-gray text-xs'>Copyright @ 2025 Apple Inc. All rights reserved.</p>
           <div className='flex'>
             {footerLinks.map((link, i) => (
-              <p key={link} className='font-semibold text-gray text-xs'>
+              <p key={link} className='font-semibold text-gray text-xs hover:text-white transition-all'>
                 {link}{' '}
                 {i !== footerLinks.length - 1 && (
                   <span className='mx-2'> | </span>
